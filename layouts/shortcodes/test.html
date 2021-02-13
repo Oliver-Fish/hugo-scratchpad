@@ -1,0 +1,4 @@
+{{ $question := (.Get "question")}}
+{{ .Page.Scratch.Set "question" $question}}
+
+{{.Inner}}
