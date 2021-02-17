@@ -9,8 +9,9 @@
 </head>
 
 <body>
+    {{ $content := .Content }}
     <h1>{{ .Scratch.Get "question" }}</h1>
-    {{.Content}}
+    {{ $content }}
 </body>
 
 </html>
